@@ -10,20 +10,26 @@ const Experience = () => {
   return (
     <div>
       <TitleText title="My Experience" />
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-16">
         {experience?.map((exp) => (
           <motion.div
             key={exp.id}
             variants={textVarient}
             initial="hidden"
             whileInView="show"
+            whileHover={{
+              y: -10,
+              scale: 1.05,
+              rotate: 2,
+              transition: { duration: 0.3, ease: "easeInOut" },
+            }}
           >
             <BackgroundGradient className="rounded-[22px] p-4 bg-zinc-900">
               <p className="text-base sm:text-xl text-black mt-4 mb-2 dark:text-neutral-200">
                 {exp.startDate} - {exp.endDate}
               </p>
               <p className="text-sm text-neutral-600">{exp.title}</p>
-              <p className="text-gray-500 mt-2">{exp.description}</p>
+              <p className="text-gray-500 mt-2">{exp.descripton}</p>
             </BackgroundGradient>
           </motion.div>
         ))}

@@ -1,14 +1,19 @@
 "use client";
 import React, { useState } from "react";
 import { HoveredLink, Menu, MenuItem, ProductItem } from "./ui/navbar-menu";
+import Link from "next/link";
 
 const Navbar = () => {
   const [active, setActive] = useState<string | null>(null);
   return (
     <div className="relative w-full flex items-center justify-center text-white">
       <div className="fixed top-0 w-full z-[1000] shadow-md shadow-purple-500 bg-black">
-        <div className="flex justify-between py-2 px-5">
-          <img src="/logo.png" width={100} alt="" />
+        <div className="flex justify-between items-center py-2 px-5">
+        <Link href="/">
+          <h1 className="text-4xl font-semibold animate-bounce mx-8 my-8">
+            Zoha Sajid<span className="text-purple-500 animate-pulse pl-2">⦾</span>
+          </h1>
+        </Link>
           <Menu setActive={setActive}>
             <MenuItem setActive={setActive} active={active} item="Services">
               <div className="flex flex-col space-y-4 text-sm">

@@ -5,7 +5,7 @@ import Experience from "@/components/Experience";
 import Footer from "@/components/Footer";
 import { HeroBanner } from "@/components/HeroBanner";
 import Navbar from "@/components/Navbar";
-import RecentBlogs from "@/components/RecentBlogs";
+// import RecentBlogs from "@/components/RecentBlogs";
 import RecentWork from "@/components/RecentWork";
 import Skills from "@/components/Skills";
 
@@ -20,9 +20,9 @@ export default function Home() {
         <Skills />
         <Experience />
         <Education />
-        <div className="relative">
+        {/* <div className="relative">
           <RecentBlogs />
-        </div>
+        </div> */}
         <Contact />
         <Footer />
       </div>

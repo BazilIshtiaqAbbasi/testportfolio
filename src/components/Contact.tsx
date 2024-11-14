@@ -80,7 +80,7 @@ const Contact = () => {
               <div className="bg-gradient-to-r from-transparent via-neutral-300 dark:via-neutral-700 to-transparent my-8 h-[1px] w-full" />
 
               <div className="flex flex-col space-y-4">
-                <button
+                {/* <button
                   className=" relative group/btn flex space-x-2 items-center justify-start px-4 w-full text-black rounded-md h-10 font-medium shadow-input bg-gray-50 dark:bg-zinc-900 dark:shadow-[0px_0px_1px_1px_var(--neutral-800)]"
                   type="submit"
                 >
@@ -99,8 +99,8 @@ const Contact = () => {
                     Google
                   </span>
                   <BottomGradient />
-                </button>
-                <button
+                </button> */}
+                {/* <button
                   className=" relative group/btn flex space-x-2 items-center justify-start px-4 w-full text-black rounded-md h-10 font-medium shadow-input bg-gray-50 dark:bg-zinc-900 dark:shadow-[0px_0px_1px_1px_var(--neutral-800)]"
                   type="submit"
                 >
@@ -109,7 +109,7 @@ const Contact = () => {
                     OnlyFans
                   </span>
                   <BottomGradient />
-                </button>
+                </button> */}
               </div>
             </form>
           </motion.div>
@@ -124,7 +124,7 @@ const Contact = () => {
         >
           <motion.div
             variants={fadeIn("left", "tween", 0.2, 1)}
-            className="flex justify-center flex-col gap-10"
+            className="flex justify-center flex-col gap-10 w-60"
           >
             <ButtonsCard>
               <IconPhone
@@ -134,7 +134,7 @@ const Contact = () => {
               />
               <div className="flex flex-col gap-2">
                 <label className="text-md">Phone</label>
-                <label className="text-xl lg:text-2xl">+01 2345 564 4534</label>
+                <label className="text-xl lg:text-2xl">+92 307 992 173 6</label>
               </div>
             </ButtonsCard>
 
@@ -146,8 +146,8 @@ const Contact = () => {
               />
               <div className="flex flex-col gap-2">
                 <label className="text-md">Email</label>
-                <label className="text-xl lg:text-2xl">
-                  codescrapper1@gmail.com
+                <label className="text-xl lg:text-xl">
+                  zohasajidabbasi@gmail.com
                 </label>
               </div>
             </ButtonsCard>
@@ -160,7 +160,7 @@ const Contact = () => {
               <div className="flex flex-col gap-2">
                 <label className="text-md">Address</label>
                 <label className="text-xl lg:text-2xl">
-                  House 123, block 1, lahore
+                        I 9, sector 1 , Islamabad
                 </label>
               </div>
             </ButtonsCard>

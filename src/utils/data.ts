@@ -2,23 +2,27 @@ export const products = [
   {
     title: "Moonbeam",
     link: "https://gomoonbeam.com",
-    thumbnail: "/trello.jpg",
+    thumbnail:
+      "https://aceternity.com/images/products/thumbnails/new/moonbeam.png",
   },
   {
     title: "Cursor",
     link: "https://cursor.so",
-    thumbnail: "/kanban.jpg",
+    thumbnail:
+      "https://aceternity.com/images/products/thumbnails/new/cursor.png",
   },
   {
     title: "Rogue",
     link: "https://userogue.com",
-    thumbnail: "/gemini.jpg",
+    thumbnail:
+      "https://aceternity.com/images/products/thumbnails/new/rogue.png",
   },
 
   {
     title: "Editorially",
     link: "https://editorially.org",
-    thumbnail: "/rental.jpg",
+    thumbnail:
+      "https://aceternity.com/images/products/thumbnails/new/editorially.png",
   },
   {
     title: "Editrix AI",
@@ -29,23 +33,27 @@ export const products = [
   {
     title: "Pixel Perfect",
     link: "https://app.pixelperfect.quest",
-    thumbnail: "/trello2.jpg",
+    thumbnail:
+      "https://aceternity.com/images/products/thumbnails/new/pixelperfect.png",
   },
 
   {
     title: "Algochurn",
     link: "https://algochurn.com",
-    thumbnail: "/trello2.jpg",
+    thumbnail:
+      "https://aceternity.com/images/products/thumbnails/new/algochurn.png",
   },
   {
     title: "Aceternity UI",
     link: "https://ui.aceternity.com",
-    thumbnail: "/dashboard.jpg",
+    thumbnail:
+      "https://aceternity.com/images/products/thumbnails/new/aceternityui.png",
   },
   {
     title: "Tailwind Master Kit",
     link: "https://tailwindmasterkit.com",
-    thumbnail: "/blogging.jpg",
+    thumbnail:
+      "https://aceternity.com/images/products/thumbnails/new/tailwindmasterkit.png",
   },
   {
     title: "SmartBridge",
@@ -69,12 +77,14 @@ export const products = [
   {
     title: "Golden Bells Academy",
     link: "https://goldenbellsacademy.com",
-    thumbnail: "/rental.jpg",
+    thumbnail:
+      "https://aceternity.com/images/products/thumbnails/new/goldenbellsacademy.png",
   },
   {
     title: "Invoker Labs",
     link: "https://invoker.lol",
-    thumbnail: "/gemini.jpg",
+    thumbnail:
+      "https://aceternity.com/images/products/thumbnails/new/invoker.png",
   },
   {
     title: "E Free Invoice",
@@ -85,142 +95,86 @@ export const products = [
 ];
 
 export interface Category {
-  id: number;
+  id:number;
   name: string;
-}
-
+};
 export interface Product {
-  id: number;
-  name: string;
-  desc: string;
+  id:number;
+  name:string;
   image: string;
   categoryId: number;
-}
+  desc: string;
+};
 export const categories: Category[] = [
-  { id: 1, name: "Prisma" },
-  { id: 2, name: "Nextjs" },
-  // Add more categories here
+  {id:1,name:"Laptops"},
+  {id:2,name:"Mobiles"},
+]
+export const work: Product[] = [
+  {id:1, name: "Iphone 13 pro max", image:"/mobile13pro.png",categoryId: 2, desc:"Iphone 13 pro max"},
+  {id:1, name: "Mac book 2021", image:"/mobile-1.jpg",categoryId: 1, desc:"Mac book 2021"},
+  {id:1, name: "Mac book 2024", image:"/macbook2024.png",categoryId: 1, desc:"Mac book 2024"},
+  {id:1, name: "Iphone 14 pro max", image:"/mobile14pro.png",categoryId: 2, desc:"Iphone 14 pro max"},
+  {id:1, name: "Iphone 15 pro max", image:"/mobile15pro.png",categoryId: 2, desc:"Iphone 15 pro max"},
+  {id:1, name: "Mac book 2022", image:"/macbook2022.png",categoryId: 1, desc:"Mac book 2022"},
 ];
 
-export const work: Product[] = [
-  {
-    id: 1,
-    name: "ecommerce",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
-    image: "/mobile-1.jpg",
-    categoryId: 1,
-  },
-  {
-    id: 4,
-    name: "trello clone",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
-    image: "/laptop-1.jpg",
-    categoryId: 2,
-  },
-  {
-    id: 6,
-    name: "kanban clone",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
-    image: "/laptop-3.jpg",
-    categoryId: 2,
-  },
-  {
-    id: 2,
-    name: "portfolio",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
-    image: "/mobile-2.jpg",
-    categoryId: 1,
-  },
-  {
-    id: 3,
-    name: "dashboard",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
-    image: "/mobile-3.jpg",
-    categoryId: 1,
-  },
-  {
-    id: 5,
-    name: "gemini clone",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
-    image: "/laptop-2.jpg",
-    categoryId: 2,
-  },
-];
 
 export const skills = [
   {
-    name: "React js",
-    percentage: "95%",
-    image: "/react.svg",
-  },
-  {
-    name: "XD",
-    percentage: "90%",
-    image: "/xd.svg",
-  },
-  {
-    name: "Javascript",
+    name:"SEO",
     percentage: "85%",
-    image: "/js.svg",
+    image:"/seo.png"
   },
   {
-    name: "Figma",
-    percentage: "97%",
-    image: "/figma.svg",
+    name:"On Page SEO",
+    percentage: "80%",
+    image: "/on.png"
   },
   {
-    name: "Wordpress",
-    percentage: "75%",
-    image: "/wp.svg",
+    name:"Off Page SEO",
+    percentage: "90%",
+    image: "/off.png"
   },
   {
-    name: "Sketch",
-    percentage: "70%",
-    image: "/sketch.svg",
+    name:"Technical SEO",
+    percentage: "50%",
+    image:"/technical.png"
   },
-];
+  {
+    name:"Social media MRK",
+    percentage: "60%",
+    image:"/social.png"
+  },
+]
+
 
 export const experience = [
   {
     id: 1,
-    startDate: "2020",
-    endDate: "2021",
-    title: "MERN stack developer",
-    description: "MERN stack, full stack 1 year experienced developer",
+    startDate: "2023",
+    endDate: "continue",
+    title: "SEO Expert",
+    descripton: "Search engine optimization & also expert in onpage & offpage",
   },
   {
     id: 2,
-    startDate: "2021",
-    endDate: "2023",
-    title: "MERN stack developer",
-    description: "MERN stack, full stack 1 year experienced developer",
+    startDate: "2024",
+    endDate: "continue",
+    title: "Content optimization & content generator",
+    descripton: "Create content for blogging sites and also optimize them",
   },
   {
     id: 3,
-    startDate: "2020",
-    endDate: "2023",
-    title: "FULL stack developer",
-    description: "MERN stack, full stack 1 year experienced developer",
+    startDate: "2024",
+    endDate: "continue",
+    title: "Social media marketing",
+    descripton: "Post and ads management",
   },
   {
     id: 4,
-    startDate: "2022",
-    endDate: "present",
-    title: "Lead developer",
-    description: "MERN stack, full stack 1 year experienced developer",
+    startDate: "2021",
+    endDate: "2023",
+    title: "Finance management",
+    descripton: "Work as a HR",
   },
-  {
-    id: 5,
-    startDate: "2020",
-    endDate: "2021",
-    title: "MERN stack developer",
-    description: "MERN stack, full stack 1 year experienced developer",
-  },
-  {
-    id: 6,
-    startDate: "2020",
-    endDate: "2021",
-    title: "MERN stack developer",
-    description: "MERN stack, full stack 1 year experienced developer",
-  },
-];
+]
