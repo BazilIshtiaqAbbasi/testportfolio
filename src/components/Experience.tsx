@@ -25,11 +25,11 @@ const Experience = () => {
             }}
           >
             <BackgroundGradient className="rounded-[22px] p-4 bg-zinc-900">
-              <p className="text-base sm:text-xl text-black mt-4 mb-2 dark:text-neutral-200">
+              <p className="text-base sm:text-xl text-white mt-4 mb-2 dark:text-neutral-200">
                 {exp.startDate} - {exp.endDate}
               </p>
               <p className="text-sm text-neutral-600">{exp.title}</p>
-              <p className="text-gray-500 mt-2">{exp.descripton}</p>
+              <p className="text-gray-400 mt-2">{exp.descripton}</p>
             </BackgroundGradient>
           </motion.div>
         ))}
