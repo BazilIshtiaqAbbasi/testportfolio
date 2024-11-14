@@ -16,7 +16,7 @@ const Navbar = () => {
               <span className="text-purple-500 animate-pulse pl-2">⦾</span>
             </h1>
           </Link>
-          <Menu setActive={setActive}>
+          {/* <Menu setActive={setActive}> */}
             {/* <MenuItem setActive={setActive} active={active} item="Services">
               <div className="flex flex-col space-y-4 text-sm">
                 <HoveredLink href="/web-dev">Web Development</HoveredLink>
@@ -29,7 +29,7 @@ const Navbar = () => {
                 <HoveredLink href="/branding">Branding</HoveredLink>
               </div>
             </MenuItem> */}
-            <div className="flex gap-4 items-center">
+            <div className="flex gap-4 items-center bg-black">
               <a href="/cv.pdf" download>
                 <button className="flex gap-2">
                   Download cv <FaDownload />
@@ -78,7 +78,7 @@ const Navbar = () => {
                 <HoveredLink href="/enterprise">Enterprise</HoveredLink>
               </div>
             </MenuItem> */}
-          </Menu>
+          {/* </Menu> */}
         </div>
       </div>
     </div>

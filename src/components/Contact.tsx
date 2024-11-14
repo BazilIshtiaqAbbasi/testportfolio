@@ -129,7 +129,7 @@ const Contact = () => {
               />
               <div className="flex flex-col gap-2">
                 <label className="text-md">Phone</label>
-                <label className="text-xl lg:text-2xl">+92 307 992 173 6</label>
+                <label className="text-xl lg:text-2xl">+92 307 9921736</label>
               </div>
             </ButtonsCard>
 
