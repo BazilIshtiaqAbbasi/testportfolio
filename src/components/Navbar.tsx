@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { HoveredLink, Menu, MenuItem, ProductItem } from "./ui/navbar-menu";
 import Link from "next/link";
+import { FaDownload } from "react-icons/fa";
 
 const Navbar = () => {
   const [active, setActive] = useState<string | null>(null);
@@ -9,13 +10,14 @@ const Navbar = () => {
     <div className="relative w-full flex items-center justify-center text-white">
       <div className="fixed top-0 w-full z-[1000] shadow-md shadow-purple-500 bg-black">
         <div className="flex justify-between items-center py-2 px-5">
-        <Link href="/">
-          <h1 className="text-4xl font-semibold animate-bounce mx-8 my-8">
-            Zoha Sajid<span className="text-purple-500 animate-pulse pl-2">⦾</span>
-          </h1>
-        </Link>
+          <Link href="/">
+            <h1 className="text-4xl font-semibold animate-bounce mx-8 my-8">
+              Zoha Sajid
+              <span className="text-purple-500 animate-pulse pl-2">⦾</span>
+            </h1>
+          </Link>
           <Menu setActive={setActive}>
-            <MenuItem setActive={setActive} active={active} item="Services">
+            {/* <MenuItem setActive={setActive} active={active} item="Services">
               <div className="flex flex-col space-y-4 text-sm">
                 <HoveredLink href="/web-dev">Web Development</HoveredLink>
                 <HoveredLink href="/interface-design">
@@ -26,8 +28,21 @@ const Navbar = () => {
                 </HoveredLink>
                 <HoveredLink href="/branding">Branding</HoveredLink>
               </div>
-            </MenuItem>
-            <MenuItem setActive={setActive} active={active} item="Products">
+            </MenuItem> */}
+            <div className="flex gap-4 items-center">
+              <a href="/cv.pdf" download>
+                <button className="flex gap-2">
+                  Download cv <FaDownload />
+                </button>
+              </a>
+              <div className="bg-purple-800 w-20 h-10 flex items-center justify-center rounded-lg hover:bg-purple-600">
+              <a href="https://wa.me/03079921736" target="_blank" >
+                <button> Hire me </button>
+              </a>
+              </div>
+            </div>
+            {/* <MenuItem setActive={setActive} active={active} item="Products">
+            
               <div className="  text-sm grid grid-cols-2 gap-10 p-4">
                 <ProductItem
                   title="Algochurn"
@@ -54,15 +69,15 @@ const Navbar = () => {
                   description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
                 />
               </div>
-            </MenuItem>
-            <MenuItem setActive={setActive} active={active} item="Pricing">
+            </MenuItem> */}
+            {/* <MenuItem setActive={setActive} active={active} item="Pricing">
               <div className="flex flex-col space-y-4 text-sm">
                 <HoveredLink href="/hobby">Hobby</HoveredLink>
                 <HoveredLink href="/individual">Individual</HoveredLink>
                 <HoveredLink href="/team">Team</HoveredLink>
                 <HoveredLink href="/enterprise">Enterprise</HoveredLink>
               </div>
-            </MenuItem>
+            </MenuItem> */}
           </Menu>
         </div>
       </div>

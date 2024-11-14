@@ -3,11 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import TitleText from "./TitleText";
 import { fadeIn, staggerContainer } from "@/utils/motion";
-import {
-  IconBrandGithub,
-  IconBrandGoogle,
-  IconBrandOnlyfans,
-} from "@tabler/icons-react";
+
 import { Label } from "./ui/label";
 import { Input } from "./ui/input";
 import { cn } from "@/utils/cn";
@@ -31,11 +27,10 @@ const Contact = () => {
             className="max-w-2xl w-full rounded-2xl m-5 p-4 md:p-8 bg-purple-800/5 border-[1px] border-purple-800 hover:shadow-md hover:shadow-purple-500"
           >
             <h2 className="font-bold text-3xl lg:text-5xl text-purple-500">
-              Welcome to Code Scrapper
+              Contact with me & hire me
             </h2>
             <p className="text-neutral-300 text-sm max-w-sm mt-2">
-              Login to aceternity if you can because we don&apos;t have a login
-              flow yet
+              You can also share your thought or any problem in your work.
             </p>
             <form className="my-8">
               <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
@@ -73,7 +68,7 @@ const Contact = () => {
                 className="bg-gradient-to-br relative group/btn from-black dark:from-zinc-900 dark:to-zinc-900 to-neutral-600 block dark:bg-zinc-800 w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
                 type="submit"
               >
-                Sign up &rarr;
+                Submit &rarr;
                 <BottomGradient />
               </button>
 
