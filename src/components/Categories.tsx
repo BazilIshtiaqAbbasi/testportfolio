@@ -29,8 +29,9 @@ const Categories = ({
       >
         All
       </button>
-      {categories.map((cat) => (
+      {categories.map((cat,ind) => (
         <button
+        key={ind}
           onClick={() => setSelectedCategoryId(cat.id)}
           className={`${
             selectedCategoryId == cat.id && "bg-purple-500"
