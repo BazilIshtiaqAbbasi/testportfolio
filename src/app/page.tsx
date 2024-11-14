@@ -4,6 +4,7 @@ import Education from "@/components/Education";
 import Experience from "@/components/Experience";
 import Footer from "@/components/Footer";
 import { HeroBanner } from "@/components/HeroBanner";
+import IconsBackground from "@/components/IconsBackground";
 import Navbar from "@/components/Navbar";
 // import RecentBlogs from "@/components/RecentBlogs";
 import RecentWork from "@/components/RecentWork";
@@ -20,6 +21,7 @@ export default function Home() {
         <Skills />
         <Experience />
         <Education />
+        <IconsBackground/>
         {/* <div className="relative">
           <RecentBlogs />
         </div> */}
